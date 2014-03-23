@@ -8,21 +8,21 @@ angular.module('mean').config(['$stateProvider', '$urlRouterProvider',
 
     // states for my app
     $stateProvider
-      .state('all articles', {
-        url: '/articles',
-        templateUrl: 'views/articles/list.html'
+      .state('all medications', {
+        url: '/medications',
+        templateUrl: 'views/medications/list.html'
     })
-      .state('create article', {
-        url: '/articles/create',
-        templateUrl: 'views/articles/create.html'
+      .state('create medication', {
+        url: '/medications/create',
+        templateUrl: 'views/medications/create.html'
     })
-      .state('edit article', {
-        url: '/articles/:articleId/edit',
-        templateUrl: 'views/articles/edit.html'
+      .state('edit medication', {
+        url: '/medications/:medicationId/edit',
+        templateUrl: 'views/medications/edit.html'
     })
-      .state('article by id', {
-        url: '/articles/:articleId',
-        templateUrl: 'views/articles/view.html'
+      .state('medication by id', {
+        url: '/medications/:medicationId',
+        templateUrl: 'views/medications/view.html'
     })
       .state('home', {
         url: '/',

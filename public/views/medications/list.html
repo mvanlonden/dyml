@@ -1,0 +1,11 @@
+<section data-ng-controller="ArticlesController" data-ng-init="find()">
+	<ul class="medications unstyled">
+		<li data-ng-repeat="medication in medications">
+			<span>{{medication.created | date:'medium'}}</span> /
+			<span>{{medication.user.name}}</span>
+			<h2><a data-ng-href="#!/medications/{{medication._id}}">{{medication.name}}</a></h2>
+			<div>{{medication.dosage}}</div>
+		</li>
+	</ul>
+	<h1 data-ng-hide="!medications || medications.length">No medications yet. <br> Why don't you <a href="/#!/medications/create">Add One</a>?</h1>
+</section>
